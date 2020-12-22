@@ -1,6 +1,7 @@
 project(flightros)
 
 cmake_minimum_required(VERSION 3.0.0)
+set(CMAKE_CXX_STANDARD 14)
 
 find_package(catkin_simple REQUIRED)
 
@@ -27,7 +28,7 @@ else ()
 endif ()
 
 # Setup General C++ Flags
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DEIGEN_STACK_ALLOCATION_LIMIT=1048576")
 # otherwise double free or corruption (out) error when running racing or motion_planning example
 add_compile_options(-O3)

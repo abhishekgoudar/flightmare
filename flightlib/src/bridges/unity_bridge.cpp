@@ -260,7 +260,7 @@ bool UnityBridge::handleOutput() {
 
           // Tell OpenCv that the input is RGB.
           if (cam.channels == 3) {
-            cv::cvtColor(new_image, new_image, CV_RGB2BGR);
+            cv::cvtColor(new_image, new_image, cv::COLOR_RGB2BGR);
           }
           unity_quadrotors_[idx]
             ->getCameras()[cam.output_index]

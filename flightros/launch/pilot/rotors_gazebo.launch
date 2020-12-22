@@ -7,7 +7,7 @@
   <arg name="world_name" default="$(find rotors_gazebo)/worlds/basic.world"/>
 
   <arg name="use_unity_editor" default="false" />
-  <arg name="paused" value="true"/>
+  <arg name="paused" value="false"/>
   <arg name="gui" value="true"/>
   <arg name="use_mpc" default="false"/>
   <arg name="use_ground_truth" default="true"/>
